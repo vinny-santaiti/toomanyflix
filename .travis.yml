@@ -24,4 +24,4 @@ before_script:
 
 script:
   - python toomanyflix/manage.py migrate --noinput
-  - python toomanyflix/manage.py test
+  - python toomanyflix/manage.py test rating
