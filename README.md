@@ -28,7 +28,7 @@ python manage.py migrate
 # create superuser for admin login
 python manage.py createsuperuser
 
-# create static, only if configured in settings
+# create static, only if configured in settings: STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 python manage.py collectstatic
 
 # run tests
