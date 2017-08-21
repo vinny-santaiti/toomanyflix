@@ -22,7 +22,14 @@ pip install -r requirements.txt
 vi toomanyflix/settings.py
 
 # setup database
+python manage.py makemigrations
 python manage.py migrate
+
+# create superuser for admin login
+python manage.py createsuperuser
+
+# create static, only if configured in settings
+python manage.py collectstatic
 
 # run tests
 python manage.py test
