@@ -9,7 +9,7 @@ git clone https://github.com/vinny-santaiti/toomanyflix.git
 cd toomanyflix
 
 # add virtual env
-virtualenv --python=python2.7 env
+virtualenv --python=python3.7 env
 
 # enter env
 source env/bin/activate
