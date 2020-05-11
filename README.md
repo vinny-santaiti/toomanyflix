@@ -14,7 +14,7 @@ virtualenv --python=python3.7 env
 
 # add virtual env for python 3 only (python 2 is not installed) 
 # venv is preinstalled with python3
-python -m venv env
+python3 -m venv env
 
 # enter env
 source env/bin/activate
