@@ -8,16 +8,16 @@ git clone https://github.com/vinny-santaiti/toomanyflix.git
 # go to folder
 cd toomanyflix
 
-# add virtual env (supports python 2 or 3: pip install virtualenv)
-# env is the virtual env folder
-virtualenv --python=python3.7 env
+# add virtualenv (supports python 2 or 3: pip install virtualenv)
+# .env is the virtual env folder
+virtualenv --python=python3.7 .env
 
-# add virtual env for python 3 only (python 2 is not installed) 
+# add virtualenv for python 3 only (python 2 is not installed) 
 # venv is preinstalled with python3
-python3 -m venv env
+python3 -m venv .env
 
-# enter env
-source env/bin/activate
+# enter virtualenv
+source .env/bin/activate
 
 # install apps
 pip install -r requirements.txt
