@@ -41,6 +41,12 @@ python manage.py test
 
 # run django
 python manage.py runserver
+
+# linters
+black . --check --exclude .env
+isort . --skip .env
+pylint .
+flake8 --exclude=.env
 ```
 
 
