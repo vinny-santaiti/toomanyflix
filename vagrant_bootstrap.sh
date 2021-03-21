@@ -10,16 +10,17 @@ echo 'Installing and configuring virtualenv and virtualenvwrapper...'
 pip install --quiet virtualenvwrapper==4.7.0 Pygments==2.1.1
 mkdir ~vagrant/virtualenvs
 chown vagrant:vagrant ~vagrant/virtualenvs
-printf "\n\n# Virtualenv settings\n" >> ~vagrant/.bashrc
-printf "export PYTHONPATH=/usr/lib/python3.4" >> ~vagrant/.bashrc
-printf "export WORKON_HOME=~vagrant/virtualenvs\n" >> ~vagrant/.bashrc
-printf "export PROJECT_HOME=/vagrant\n" >> ~vagrant/.bashrc
-printf "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.4\n" >> ~vagrant/.bashrc
-printf "source /usr/local/bin/virtualenvwrapper.sh\n" >> ~vagrant/.bashrc
-
+{
+printf "\n\n# Virtualenv settings\n"
+printf "export PYTHONPATH=/usr/lib/python3.4"
+printf "export WORKON_HOME=~vagrant/virtualenvs\n"
+printf "export PROJECT_HOME=/vagrant\n"
+printf "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.4\n"
+printf "source /usr/local/bin/virtualenvwrapper.sh\n"
 # Some useful aliases for getting started
-printf "\nUseful Aliases:\n" >> ~vagrant/.bashrc
-printf "alias runserver='python manage.py runserver 0.0.0.0:8000'\n" >> ~vagrant/.bashrc
+printf "\nUseful Aliases:\n"
+printf "alias runserver='python manage.py runserver 0.0.0.0:8000'\n"
+} >> ~vagrant/.bashrc
 
 # Complete
 echo ""
