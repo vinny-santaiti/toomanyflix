@@ -1,4 +1,4 @@
-### Deployment
+# Deployment
 
 [Django](https://www.djangoproject.com/) application using the Django Rest Framework [DRF](http://www.django-rest-framework.org).
 
