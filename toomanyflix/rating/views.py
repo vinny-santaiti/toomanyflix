@@ -37,7 +37,7 @@ class MovieViewSet(viewsets.ModelViewSet):
         """
         url = 'http://www.omdbapi.com/?i=tt3896198&apikey=f8ef04cb&r=json&plot=short'
         data = {'t': movie.title}
-        api_url = '{0}&{1}'.format(url, urllib.urlencode(data))
+        api_url = '{0}&{1}'.format(url, urllib.parse.urlencode(data))
         response = requests.get(api_url)
         response.raise_for_status()
         json_resp = response.json()
