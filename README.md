@@ -15,7 +15,7 @@ cd toomanyflix
 # .env is the virtual env folder
 virtualenv --python=python3.7 .env
 
-# add virtualenv for python 3 only (python 2 is not installed) 
+# add virtualenv for python 3 only (python 2 is not supported) 
 # venv is preinstalled with python3
 python3 -m venv .env
 
