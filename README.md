@@ -8,7 +8,10 @@ git clone https://github.com/vinny-santaiti/toomanyflix.git
 # go to folder
 cd toomanyflix
 
-# add virtualenv (supports python 2 or 3: pip install virtualenv)
+# add virtualenv (supports python 2 or 3): 
+# curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+# python3 get-pip.py
+# pip install virtualenv
 # .env is the virtual env folder
 virtualenv --python=python3.7 .env
 
