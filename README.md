@@ -52,5 +52,18 @@ pylint .
 flake8 --exclude=.env
 ```
 
+```
+# brew install pyenv pyenv-virtualenv
+pyenv versions
+pyenv install -v 3.8.11
+# create virtualenv
+pyenv virtualenv 3.8.11 env
+# activate in folder
+pyenv local env
+# when you access the directory, the virtualenv will be activated
+pyenv which python
+```
+
+
 
 
