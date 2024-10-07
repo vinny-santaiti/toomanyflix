@@ -22,6 +22,10 @@ python3.8 -m venv .env
 # enter virtualenv
 source .env/bin/activate
 
+# or use pyenv to autoactivate virtualenv in folder
+pyenv virtualenv <python_version> <environment_name>
+pyenv local <environment_name>
+
 # install apps
 pip install -r requirements.txt
 
